@@ -1,0 +1,49 @@
+MrKeynes - An Economy Plugin for Bukkit
+
+== Table of Contents ==
+
+1. About
+2. Compiling
+3. Installation
+4. Making contributions
+
+== 1. About ==
+
+Todo: write this section
+
+== 2. Compiling ==
+
+If you would like to compile MrKeynes, you will need to obtain three things:
+
+* Java 6 SE
+* Maven 3.0
+* The Bukkit API
+
+It is important that the Bukkit API is visible to Maven. If you've downloaded
+the Bukkit API from Bukkit's git repository, then all you have to do is issue
+"mvn clean install". This will automatically ensure that maven is available in your local Maven repository. Otherwise, you will need to issue the 
+following command:
+
+$ mvn install:install-file -Dfile=/path/to/bukkit.jar -DgroupId=org.bukkit \
+-DartifactId=bukkit -Dpackaging=jar -Dversion=0.0.1-SNAPSHOT\
+-D=generatePom=true 
+
+Now, run the following command:
+
+$ mvn clean package
+
+This will generate a file named target/MrKeynes.jar. This file is your freshly
+-minted MrKeynes.plugin. You can follow the instructions below to install it.
+
+== 3. Installing ==
+
+Todo: write this section
+
+== 4. Making contributions ==
+
+Help is always considered valuable and welcome. This is part of the reasony 
+why MrKeynes has been released under the GPL. However, you don't have to be
+a coder to make meaningful contributions to the MrKeynes project. Writing
+documentation, reporting bugs, requesting features, or even just spreading the
+word are all ways in which you can help out without any knowledge of 
+programming.
